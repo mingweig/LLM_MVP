@@ -1,26 +1,23 @@
-90835 
-
 Special Topics: Designing Smart and Healthy Systems
 
 Yue Sun, Mingwei Gao
 
-Generating Patient Discharge Letters using Large Language Models (LLMs) - Project Report
+# Generating Patient Discharge Letters using Large Language Models (LLMs) - Project Report
 
-Introduction and Background
+## Introduction and Background
 
 In the fast-paced environment of healthcare, professionals often spend up to 50% of their time on administrative tasks, including the preparation of ward round notes and patient discharge summaries. These tasks, while critical, divert time away from direct patient care and can contribute to burnout among healthcare providers. This project aims to alleviate some of this administrative burden by leveraging the capabilities of Large Language Models (LLMs) to automate the creation of discharge summaries, thereby enhancing efficiency and allowing healthcare providers to dedicate more time to patient care.
 
-Project Overview and Technical Details
+## Project Overview and Technical Details
 
-System Architecture
+### System Architecture
 
 The proposed system utilizes a streamlined technical architecture incorporating advanced language models, specifically GPT-3.5 and GPT-4. The architecture is designed to handle sensitive patient data responsibly while generating accurate and concise discharge summaries. 
 
 
+### Key components of the system include:
 
-Key components of the system include:
-
-Data Integrity: The system's data entry function is specifically designed to maintain the integrity of the patient database by ensuring that only unique patient IDs are stored, thus preventing duplication of records. This is accomplished through a meticulous check where, upon the submission of new patient data, the system verifies if the patient ID already exists within the database. In case the ID is new, the data is securely added to the database, and the action is confirmed to the user with a message indicating successful addition. If an existing ID is detected, the system advises the user to recheck the submitted information to safeguard against erroneous entries. 
+* Data Integrity * : The system's data entry function is specifically designed to maintain the integrity of the patient database by ensuring that only unique patient IDs are stored, thus preventing duplication of records. This is accomplished through a meticulous check where, upon the submission of new patient data, the system verifies if the patient ID already exists within the database. In case the ID is new, the data is securely added to the database, and the action is confirmed to the user with a message indicating successful addition. If an existing ID is detected, the system advises the user to recheck the submitted information to safeguard against erroneous entries. 
 
 Data Privacy: The initial stage involves a filtering mechanism to remove all personally identifiable information (PII), including name, date of birth, and MRN, from patient data, ensuring HIPAA compliance and protecting patient privacy. The filtered data will include relevant medical information, such as diagnosis, treatments, and ward round notes, which are essential for generating accurate discharge letters. 
 
